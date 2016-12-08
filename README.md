@@ -10,7 +10,7 @@
 - [Widget Android](#widget-android)
   - [EditText](#edittext)
     - [How to make editText without line at bottom](#how-to-make-edittext-without-line-at-bottom)
-    - [How to create EditText with rounded corners](#how-to-create-editText-with-rounded-corners)
+    - [How to create EditText with rounded corners](#how-to-create-edittext-with-rounded-corners)
     - [Java](#java)
 
 ## Library Color
