@@ -157,7 +157,7 @@
 
 ##How to make editText without line at bottom
 
-    <p align="center" style="color:red">android:background="@android:color/transparent"<p>
+    <p align="center">android:background="@android:color/transparent"</p>
 
 
 
