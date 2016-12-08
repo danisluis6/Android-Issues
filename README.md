@@ -10,6 +10,7 @@
 - [Widget Android](#widget-android)
   - [EditText](#edittext)
     - [How to make editText without line at bottom](#how-to-make-edittext-without-line-at-bottom)
+    - [How to create EditText with rounded corners](#how-to-create-editText-with-rounded-corners)
     - [Java](#java)
 
 ## Library Color
@@ -158,6 +159,30 @@
 ##How to make editText without line at bottom
 
 <p align="center">android:background="@android:color/transparent"</p>
+
+##How to create EditText with rounded corners
+
+<p align="center">
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid
+        android:color="#263643">
+    </solid>
+    <stroke
+            android:width="1sp"
+            android:color="#00AFF0">
+    </stroke>
+    <padding
+            android:bottom="5dp"
+            android:left="5dp"
+            android:top="5dp"
+            android:right="5dp">
+    </padding>
+    <corners
+            android:radius="10dp">
+    </corners>
+</shape>
+</p>
 
 
 
