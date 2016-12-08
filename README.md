@@ -164,27 +164,25 @@
 
 ##How to create EditText with rounded corners
 
-<p align="center">
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
-    <solid
-        android:color="#263643">
-    </solid>
-    <stroke
-            android:width="1sp"
-            android:color="#00AFF0">
-    </stroke>
-    <padding
-            android:bottom="5dp"
-            android:left="5dp"
-            android:top="5dp"
-            android:right="5dp">
-    </padding>
-    <corners
-            android:radius="10dp">
-    </corners>
-</shape>
-</p>
+	<?xml version="1.0" encoding="utf-8"?>
+	<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+	    <solid
+		android:color="#263643">
+	    </solid>
+	    <stroke
+		    android:width="1sp"
+		    android:color="#00AFF0">
+	    </stroke>
+	    <padding
+		    android:bottom="5dp"
+		    android:left="5dp"
+		    android:top="5dp"
+		    android:right="5dp">
+	    </padding>
+	    <corners
+		    android:radius="10dp">
+	    </corners>
+	</shape>
 
 ##How to add icon inside EditText view in Android
 
