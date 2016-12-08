@@ -13,6 +13,7 @@
     - [How to create EditText with rounded corners](#how-to-create-edittext-with-rounded-corners)
     - [How to add icon inside EditText view in Android](#how-to-add-icon-inside-edittext-view-in-android)
     - [How to set any image for ImageView](#how-to-set-any-image-for-imageview)
+    - [How to set dimesion of icon inside EditText](#how-to-set-dimesion-of-icon-inside-edittext)
 
 ## Library Color
 
@@ -193,6 +194,8 @@
 
 <p align="center">android:src="@drawable/background"</p>
 
+##How to set dimesion of icon inside EditText
 
+<p align="center">24px => 16px or smaller</p>
 
 
