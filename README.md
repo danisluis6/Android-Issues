@@ -11,7 +11,8 @@
   - [EditText](#edittext)
     - [How to make editText without line at bottom](#how-to-make-edittext-without-line-at-bottom)
     - [How to create EditText with rounded corners](#how-to-create-edittext-with-rounded-corners)
-    - [Java](#java)
+    - [How to add icon inside EditText view in Android](#how-to-add-icon-inside-edittext-view-in-android)
+    - [How to set any image for ImageView](#how-to-set-any-image-for-imageview)
 
 ## Library Color
 
@@ -184,6 +185,13 @@
 </shape>
 </p>
 
+##How to add icon inside EditText view in Android
+
+<p align="center">android:drawableLeft="@drawable/my_icon"</p>
+
+##How to set any image for ImageView
+
+<p align="center">android:src="@drawable/background"</p>
 
 
 
