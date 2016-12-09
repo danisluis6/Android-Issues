@@ -14,6 +14,7 @@
     - [How to add icon inside EditText view in Android](#how-to-add-icon-inside-edittext-view-in-android)
     - [How to set any image for ImageView](#how-to-set-any-image-for-imageview)
     - [How to set dimesion of icon inside EditText](#how-to-set-dimesion-of-icon-inside-edittext)
+    - [How to make any html color code semi transparent](#how-to-make-any-html-color-code-semi-transparent)
 
 ## Library Color
 
@@ -196,4 +197,10 @@
 
 <p align="center">24px => 16px or smaller</p>
 
+##How to make any html color code semi transparent
 
+<p align="center">
+If the color is represented in hexadecimal, like #424242, then adding two more digits in front of this "number" will represent the transparency, ex: #66424242. (66 in this example)
+You can play a bit until arrive at desired effect.
+so this AA ranges from 0 to 255 also 66 is how many % of 100?
+</p>
