@@ -16,6 +16,7 @@
     - [How to set dimesion of icon inside EditText](#how-to-set-dimesion-of-icon-inside-edittext)
     - [How to make any html color code semi transparent](#how-to-make-any-html-color-code-semi-transparent)
     - [Load image from url](#load-image-from-url)
+    - [Draw GridLayout](#draw-gridLayout)
 
 ## Library Color
 
@@ -210,3 +211,126 @@ so this AA ranges from 0 to 255 also 66 is how many % of 100?
 <p align="center">
 
 </p>
+
+##Draw GridLayout
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="com.example.enclaveit.appcontacts.ui.activities.PuzzleImplicitIntent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:text="+84972248187"
+            android:textColor="#FFFFFF"
+            android:textSize="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridLayout
+            android:orientation="horizontal"
+            android:columnCount="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_column="3"
+                android:text="/"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="*"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="-"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:layout_rowSpan="3"
+                android:text="+"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:layout_columnSpan="2"
+                android:text="0"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:text="00"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:layout_columnSpan="3"
+                android:text="="
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:layout_gravity="fill"
+                android:layout_rowSpan="3"
+                android:text="+" />
+
+            <Button
+                android:layout_gravity="fill"
+                android:layout_columnSpan="2"
+                android:text="0" />
+
+            <Button
+                android:layout_gravity="fill"
+                android:layout_columnSpan="3"
+                android:text="=" />
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
