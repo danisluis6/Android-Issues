@@ -17,6 +17,7 @@
     - [How to make any html color code semi transparent](#how-to-make-any-html-color-code-semi-transparent)
     - [Load image from url](#load-image-from-url)
     - [Draw GridLayout](#draw-gridLayout)
+    - [How to organizate folder in android-studio](#how-to-organizate-folder-in-android-studio)
 
 ## Library Color
 
@@ -333,4 +334,78 @@ so this AA ranges from 0 to 255 also 66 is how many % of 100?
     </LinearLayout>
 </LinearLayout>
 
+#How to organizate folder in android-studio
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.3"
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat'
+    testCompile 'junit:junit:4.12'
+}
+
+
+---------------------------------------------------------------------------
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.7.+'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+--------------------------------------------------------------------------
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts/activity',
+                            'src/main/res/layouts/fragment',
+                            'src/main/res/layouts/content',
+                            'src/main/res/layouts/adapter',
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+        }
+    }
 
