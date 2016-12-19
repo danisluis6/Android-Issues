@@ -18,6 +18,7 @@
     - [Load image from url](#load-image-from-url)
     - [Draw GridLayout](#draw-gridLayout)
     - [How to organizate folder in android-studio](#how-to-organizate-folder-in-android-studio)
+    - [How to cutomize activity on more device](#How to cutomize activity on more device)
 
 ## Library Color
 
@@ -408,4 +409,17 @@ task clean(type: Delete) {
                     ]
         }
     }
+
+##How to cutomize activity on more device
+
+    - Create folder res, select new Android Resource Directory
+    + values-[size screen]
+    + layout[type = size]
+    Coding:
+    <?xml version="1.0" encoding="utf-8"?>
+	<resources>
+	    <item type="layout" name="activity_book">
+		@layout/activity_book_wide
+	    </item>
+	</resources>
 
